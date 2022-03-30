@@ -9,6 +9,10 @@ let parola1 = prompt("Inserisci prima parola");
 
 
 let parola2 = prompt("Inserisci seconda parola");
+if(parola2 == 0){
+    alert("Inserisci una stringa");
+    
+}
 
 if(parola1.length > parola2.length){
     console.log(parola2);
