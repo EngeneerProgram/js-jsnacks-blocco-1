@@ -8,6 +8,7 @@ console.log( "Gli invitati sono: " , container);
 
 let partecipa = false;
 
+
 let nome_utente = prompt("Come ti chiami?");
 
 for(let i = 0; i<container.length; i++){
@@ -18,5 +19,6 @@ for(let i = 0; i<container.length; i++){
     }
 }   
 if(partecipa == false){
-    console.log("non puoi partecipare all'evento");
+    console.log(`${nome_utente} non può partecipare all'evento`);
 }
+
