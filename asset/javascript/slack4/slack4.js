@@ -4,18 +4,19 @@ SNACK 4 In un array sono contenuti i nomi degli invitati alla festa del grande G
 
 //Creiamo l'array contente gli invitati alla festra
 let container = ["rosario", "fabiola" , "fabio", "giovanni" ,"mike", "pippo", "paperino"];
-console.log(container);
+console.log( "Gli invitati sono: " , container);
 
 let partecipa = false;
 
 let nome_utente = prompt("Come ti chiami?");
-console.log(nome_utente);
+
 for(let i = 0; i<container.length; i++){
     
     if(nome_utente == container[i]){
     partecipa = true;
-    console.log("puoi partecipare all'evento");
-    }else{
-        console.log("Il tuo nome non è presente nella lista");
+    console.log(`${nome_utente} può partecipare all'evento`);
     }
 }   
+if(partecipa == false){
+    console.log("non puoi partecipare all'evento");
+}
