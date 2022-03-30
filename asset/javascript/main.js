@@ -1,19 +1,21 @@
 /*
-SNACK 1 
-L’utente inserisce due numeri in successione, con due prompt.
-Il software stampa il maggiore.
+NACK 2 
+L’utente inserisce due parole in successione, con due prompt.
+Il software stampa prima la parola più corta, poi la parola più lunga.
 */
 
 
-let num1 = prompt("inserisci un numero");
-console.log(num1);
-let num2 = prompt("Inserisci secondo numero: ");
-console.log(num2);
+let parola1 = prompt("Inserisci prima parola");
 
-if(num1>num2){
-    console.log("num1 è maggiore di num2");
-}else if (num1==num2){
-    console.log("I numeri inseriti sono uguali");
+
+let parola2 = prompt("Inserisci seconda parola");
+
+if(parola1.length > parola2.length){
+    console.log(parola2);
+    console.log(parola1);
+}else if(parola1.length == parola2.length) {
+    console.log("le stringhe hanno stessa lunghezza");
 }else{
-    console.log("num2 è più grande");
+    console.log(parola1);
+    console.log(parola2);
 }
